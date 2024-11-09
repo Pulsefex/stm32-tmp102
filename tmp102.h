@@ -11,6 +11,7 @@
 
 
 #define TMP102_I2C_ADDR     0x48
+#define TMP102_RESOLUTION   0.0625
 
 
 
