@@ -26,8 +26,9 @@
 /*********Conversion Constant****/
 #define TMP102_RESOLUTION   0.0625      //Resolution in Celsius per LSB
 
-
-
+/**********Function Prototypes*********/
+int TMP102_Init(void);
+int TMP102_ReadTemperature(float *temperature);
 
 
 
