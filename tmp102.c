@@ -40,7 +40,7 @@ int TMP102_ReadTemperature(float *temperature /*pointer to store the temperature
 
     /* Receive 2 bytes of temperature data */
 
-    if ((leroy = HAL_I2C_Master_Receive(&hi2c1, TMP102_I2C_ADDR, buf, 2, HAL_MAX_DELAY)) != HAL_OK) {
+    if ((leroy = HAL_I2C_Master_Receive(&hi2c1, TMP102_I2C_ADDR, buffer, 2, HAL_MAX_DELAY)) != HAL_OK) {
         return TMP102_ERR_READ; //Receiving error
     }
 
